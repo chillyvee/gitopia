@@ -14,7 +14,7 @@ require (
 	github.com/pkg/errors v0.9.1
 	github.com/spf13/cast v1.5.0
 	github.com/spf13/cobra v1.6.1
-	github.com/stretchr/testify v1.8.2
+	github.com/stretchr/testify v1.8.3
 	github.com/tendermint/tendermint v0.34.28
 	github.com/tendermint/tm-db v0.6.7
 	google.golang.org/genproto v0.0.0-20230803162519-f966b187b2e5 // indirect
@@ -146,6 +146,7 @@ require (
 )
 
 require (
+	github.com/crypto-org-chain/cronos/store v0.0.0-00010101000000-000000000000
 	github.com/ipfs/go-cid v0.3.2
 	golang.org/x/exp v0.0.0-20230310171629-522b1b587ee0
 	google.golang.org/genproto/googleapis/api v0.0.0-20230822172742-b8732ec3820d
@@ -159,10 +160,13 @@ require (
 	github.com/btcsuite/btcd/btcec/v2 v2.3.2 // indirect
 	github.com/chzyer/readline v0.0.0-20180603132655-2972be24d48e // indirect
 	github.com/cometbft/cometbft-db v0.7.0 // indirect
+	github.com/cosmos/gogoproto v1.4.7 // indirect
 	github.com/creachadair/taskgroup v0.3.2 // indirect
+	github.com/crypto-org-chain/cronos/memiavl v0.0.4 // indirect
 	github.com/decred/dcrd/dcrec/secp256k1/v4 v4.1.0 // indirect
 	github.com/google/s2a-go v0.1.4 // indirect
 	github.com/klauspost/cpuid/v2 v2.0.4 // indirect
+	github.com/ledgerwatch/erigon-lib v0.0.0-20230210071639-db0e7ed11263 // indirect
 	github.com/manifoldco/promptui v0.9.0 // indirect
 	github.com/minio/blake2b-simd v0.0.0-20160723061019-3f5f724cb5b1 // indirect
 	github.com/minio/sha256-simd v1.0.0 // indirect
@@ -175,6 +179,12 @@ require (
 	github.com/stretchr/objx v0.5.0 // indirect
 	github.com/tecbot/gorocksdb v0.0.0-20191217155057-f0fad39f321c // indirect
 	github.com/tidwall/btree v1.5.0 // indirect
+	github.com/tidwall/gjson v1.14.0 // indirect
+	github.com/tidwall/match v1.1.1 // indirect
+	github.com/tidwall/pretty v1.2.0 // indirect
+	github.com/tidwall/tinylru v1.1.0 // indirect
+	github.com/tidwall/wal v1.1.7 // indirect
+	github.com/zbiljic/go-filelock v0.0.0-20170914061330-1dbf7103ab7d // indirect
 	golang.org/x/sync v0.3.0 // indirect
 	google.golang.org/genproto/googleapis/rpc v0.0.0-20230822172742-b8732ec3820d // indirect
 )
@@ -185,3 +195,7 @@ replace github.com/tendermint/tendermint => github.com/cometbft/cometbft v0.34.2
 
 // replace broken goleveldb
 replace github.com/syndtr/goleveldb => github.com/syndtr/goleveldb v1.0.1-0.20210819022825-2ae1ddf74ef7
+
+replace github.com/crypto-org-chain/cronos/store => github.com/chillyvee/cronos/store v0.0.5-0.20240310153021-e228e62ec25b
+
+replace github.com/crypto-org-chain/cronos/memiavl => github.com/chillyvee/cronos/memiavl v0.0.5-0.20240310153021-e228e62ec25b
